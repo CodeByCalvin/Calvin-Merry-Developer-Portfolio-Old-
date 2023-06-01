@@ -164,22 +164,50 @@ p {
   border: none;
 }
 
+.card-img-top {
+  height: 200px;
+  object-fit: cover;
+}
+
 .card-body {
-  padding: 1.4rem;
+  padding: 2rem;
+  padding-top: 1rem;
+  flex-grow: 1;
+  transition: all 0.2s ease-in-out;
+}
+
+.card-body ul {
+  font-size: 1.8rem;
+  font-weight: 500;
+  margin-left: 0rem;
+  list-style: inside;
+}
+
+.card-body li {
+  margin-bottom: 1rem;
+  list-style: none;
+}
+
+.card:hover {
+  transform: translateY(-0.5rem);
 }
 
 .card-title {
   font-size: 2.4rem;
-  margin-bottom: 2rem;
+  margin-bottom: 1.4rem;
 }
 
 .card-text {
   font-size: 1.8rem;
+  margin-bottom: 1.4rem;
 }
 
-.btn-group,
-.card-text {
-  margin-bottom: 3.4rem;
+ul p {
+  text-decoration: underline;
+}
+
+.btn-group {
+  margin-bottom: 2.4rem;
 }
 
 .btn-group {
@@ -195,6 +223,11 @@ p {
   border: none;
   color: #fff;
   cursor: none;
+  transition: all 0.2s ease-in-out;
+}
+
+.btn-language:hover {
+  transform: scale(1.05);
 }
 
 .btn-react {
@@ -217,8 +250,13 @@ p {
   background-color: #3c873a;
 }
 
+.btn-bootstrap {
+  background-color: #563d7c;
+}
+
 .cta-group {
   gap: 20px;
+  margin-bottom: 2rem;
 }
 
 .btn-card-cta {
@@ -235,4 +273,39 @@ p {
 
 .btn-card-cta:hover {
   transform: scale(1.1);
+}
+
+.coming-soon {
+  font-size: 1.8rem;
+  color: #c92a2a;
+  margin-bottom: 2rem;
+}
+.blur-card {
+  backdrop-filter: blur(4px); /* Adjust the blur amount as desired */
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.8
+  ); /* Adjust the background color and opacity as desired */
+}
+
+.blur-card .card-img-top {
+  filter: blur(4px); /* Apply the blur effect to the card image */
+}
+
+.blur-card .btn-group {
+  filter: blur(4px); /* Apply the blur effect to the button group */
+}
+
+.blur-card .card-text {
+  filter: blur(4px); /* Apply the blur effect to the card text */
+}
+
+.blur-card .cta-group {
+  filter: blur(4px); /* Apply the blur effect to the CTA buttons */
+}
+
+.blur-card .card-title {
+  filter: none; /* Remove the blur effect from the card title */
 }
