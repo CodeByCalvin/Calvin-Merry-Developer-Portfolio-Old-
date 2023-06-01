@@ -83,15 +83,20 @@ body {
 
 .text-container {
   position: relative;
+  z-index: 3;
 }
 
-.colored-box {
+.coloured-box {
   height: 1.8rem;
   background-color: var(--primary-color-dark);
   position: absolute;
   top: 50%;
   width: 100%;
   z-index: -1;
+}
+
+.coloured-box-project {
+  width: 40rem;
 }
 
 .profile-picture {
@@ -110,10 +115,13 @@ h1 {
   font-size: 6.2rem;
   margin-bottom: 4.8rem;
   line-height: 1.05;
+  margin-left: 7rem;
+  z-index: 2;
 }
 
 h2 {
   font-size: 4.4rem;
+  margin-left: 6rem;
 }
 
 p {
@@ -127,10 +135,46 @@ p {
   border-radius: 50%;
   border: none;
   background-color: none;
+  transition: all 0.2s ease-in-out;
 }
 
 .scroll-down-btn:hover {
-  transform: scale(1.1);
+  transform: scale(1.2);
+}
+
+.typing-animation::after {
+  content: "|";
+  animation: blink-caret 0.75s step-end infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: calc(100% + 0.4em);
+  }
+}
+
+.typing-animation {
+  overflow: hidden;
+  white-space: nowrap;
+  animation: typing 4s steps(40) 1s forwards;
+}
+
+.typing-animation::after {
+  content: "|";
+  animation: blink-caret 0.75s step-end infinite;
+}
+
+@keyframes blink-caret {
+  from,
+  to {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
 }
 
 /****************************/
