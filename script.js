@@ -13,8 +13,13 @@ document.addEventListener('DOMContentLoaded', (event) => {
     const maximiseBtn = card.querySelector('.maximise-btn');
     const maximiseBtnIcon = card.querySelector('.maximise-btn-icon');
 
+    if (!maximiseBtn) {
+      return;
+    }
+
     maximiseBtn.addEventListener('click', () => {
       const cardContent = card.querySelector('.card-content').innerHTML;
+
       modalBody.innerHTML = cardContent;
 
       // If no modal exists, create one
