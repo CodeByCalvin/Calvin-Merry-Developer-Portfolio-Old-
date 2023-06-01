@@ -78,10 +78,25 @@ body {
 }
 
 /****************************/
-/* RADIAL MENU */
+/* MENU */
 /****************************/
 
+.social-link {
+  width: 3rem;
+  height: 3rem;
+  text-decoration: none;
+  border: none;
+  background-color: transparent;
+  transition: all 0.2s ease-in-out;
+}
 
+.social-link:hover {
+  transform: scale(1.2);
+}
+
+.social-link-icon {
+  width: 3rem;
+}
 
 /****************************/
 /* HERO PAGE */
@@ -117,6 +132,7 @@ body {
   height: auto;
   object-fit: cover;
   object-position: center;
+  margin-bottom: 1rem;
 }
 
 .row-mb {
