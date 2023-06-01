@@ -38,6 +38,7 @@ Spacing System (px):
 
 :root {
   --primary-color-dark: #fcd5ce;
+  --primary-color-black: #212529;
 }
 
 * {
@@ -55,7 +56,7 @@ html {
 
 body {
   font-family: "Poppins", sans-serif;
-  color: #343a40;
+  color: var(--primary-color-black);
   line-height: 1;
   font-weight: 400;
   overflow-x: hidden;
@@ -149,6 +150,11 @@ p {
 .custom-rounded {
   border-top-left-radius: 14px;
   border-top-right-radius: 14px;
+  overflow: hidden;
+}
+
+.card.custom-rounded {
+  overflow: hidden;
 }
 
 .card {
@@ -176,15 +182,57 @@ p {
   margin-bottom: 3.4rem;
 }
 
-.btn .btn-language {
-  font-size: 1rem;
+.btn-group {
+  gap: 5px;
 }
 
 .btn-language {
-  font-size: 1.4rem;
-  padding: 0.25rem 0.5rem;
+  font-size: 1.6rem;
+  font-weight: 500;
+  padding: 0.75rem 1.2rem;
+  background-color: red;
+  border-radius: 20px;
+  border: none;
+  color: #fff;
+  cursor: none;
+}
+
+.btn-react {
+  background-color: #2ccef9;
+}
+
+.btn-javascript {
+  background-color: #edd010;
+}
+
+.btn-html {
+  background-color: #e44d26;
+}
+
+.btn-css {
+  background-color: #264de4;
+}
+
+.btn-nodejs {
+  background-color: #3c873a;
+}
+
+.cta-group {
+  gap: 20px;
 }
 
 .btn-card-cta {
   font-size: 2rem;
+  font-weight: 500;
+  background-color: var(--primary-color-black);
+  border: none;
+  padding: 1rem 1.5rem;
+  border-radius: 30px;
+  text-decoration: none;
+  color: #fff;
+  transition: all 0.2s ease-in-out;
+}
+
+.btn-card-cta:hover {
+  transform: scale(1.1);
 }
