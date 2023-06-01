@@ -37,8 +37,9 @@ Spacing System (px):
 */
 
 :root {
-  --primary-color-dark: #fcd5ce;
-  --primary-color-black: #212529;
+  --primary-colour-dark: #fcd5ce;
+  --primary-colour-light: #f8f9fa;
+  --primary-colour-black: #212529;
 }
 
 * {
@@ -92,7 +93,7 @@ body {
 
 .coloured-box {
   height: 1.8rem;
-  background-color: var(--primary-color-dark);
+  background-color: var(--primary-colour-dark);
   position: absolute;
   top: 50%;
   width: 100%;
@@ -100,7 +101,8 @@ body {
 }
 
 .coloured-box-project {
-  width: 40rem;
+  width: 30.7rem;
+  margin-left: 4rem;
 }
 
 .profile-picture {
@@ -185,6 +187,10 @@ p {
 /* PROJECTS */
 /****************************/
 
+#projects {
+  background-color: #fff4f2;
+}
+
 .maximise-btn {
   border: none;
 }
@@ -209,7 +215,7 @@ p {
 .projects {
   padding-top: 5rem;
   padding-bottom: 5rem;
-  background-color: #f8f9fa;
+  background-color: var(--primary-colour-light);
 }
 
 .projects .container-fluid {
@@ -227,7 +233,7 @@ p {
 }
 
 .card {
-  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
+  box-shadow: 0 1.2rem 2.4rem rgba(0, 0, 0, 0.075);
   transition: all 0.3s ease-in-out;
 }
 
@@ -342,7 +348,7 @@ ul p {
 .btn-card-cta {
   font-size: 2rem;
   font-weight: 500;
-  background-color: var(--primary-color-black);
+  background-color: var(--primary-colour-black);
   border: none;
   padding: 1rem 1.5rem;
   border-radius: 30px;
@@ -421,7 +427,7 @@ ul p {
   font-size: 2rem;
   padding: 0.5rem;
   font-weight: 500;
-  color: #000; /* assuming that --primary-color-black is not defined, this will make the button black */
+  color: var(--primary-colour-black);
   transition: all 0.2s ease-in-out;
   background-color: transparent;
   border: none;

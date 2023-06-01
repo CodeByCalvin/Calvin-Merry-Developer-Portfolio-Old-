@@ -1,6 +1,6 @@
 // Scroll down button
 document.querySelector('#scroll-down-btn').addEventListener('click', function () {
-  document.querySelector('#projects').scrollIntoView({ behavior: 'smooth' });
+  document.querySelector('#projects-title').scrollIntoView({ behavior: 'smooth' });
 });
 
 document.addEventListener('DOMContentLoaded', (event) => {
