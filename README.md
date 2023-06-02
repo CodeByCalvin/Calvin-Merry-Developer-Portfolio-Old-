@@ -4,7 +4,8 @@
 
 **[Live demo](https://calvinmerrydevportfolio.netlify.app/)**
 
-<!-- ![Calvin Merry Developer Portfolio](https://i.imgur.com/ZBMv7ng.jpg "Calvin Merry Developer Portfolio homepage") -->
+![Calvin Merry Developer Portfolio](https://i.imgur.com/IonPikS.png "Calvin Merry Developer Portfolio homepage")
+![Calvin Merry Developer Portfolio](https://i.imgur.com/JaEIZZB.png "Calvin Merry Developer Project section")
 
 ## Features
 
