@@ -1,395 +1,599 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Calvin Merry Dev</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Calvin Merry Dev</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="icon" href="imgs/favicon-32x32.png" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script defer src="script.js"></script>
+  </head>
 
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
-    crossorigin="anonymous"></script>
-  <link rel="icon" href="imgs/favicon-32x32.png" type="image/x-icon">
-  <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap"
-    rel="stylesheet">
-  <script defer src="script.js"></script>
-</head>
+  <body>
+    <header
+      class="d-flex align-items-center justify-content-center position-relative"
+      style="height: 100vh; transform: translateY(-10%)"
+    >
+      <div class="container text-left">
+        <div class="row align-items-end row-mb">
+          <div class="col-3">
+            <img
+              class="profile-picture"
+              src="imgs/profile-picture.jpg"
+              alt="A photo of Calvin Merry"
+            />
 
-<body>
+            <div class="links-container text-center">
+              <a href="https://github.com/CodeByCalvin" target="_blank"
+                ><button class="social-link">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    data-name="Layer 1"
+                    viewBox="0 0 24 24"
+                    id="github"
+                  >
+                    <path
+                      d="M12,2.2467A10.00042,10.00042,0,0,0,8.83752,21.73419c.5.08752.6875-.21247.6875-.475,0-.23749-.01251-1.025-.01251-1.86249C7,19.85919,6.35,18.78423,6.15,18.22173A3.636,3.636,0,0,0,5.125,16.8092c-.35-.1875-.85-.65-.01251-.66248A2.00117,2.00117,0,0,1,6.65,17.17169a2.13742,2.13742,0,0,0,2.91248.825A2.10376,2.10376,0,0,1,10.2,16.65923c-2.225-.25-4.55-1.11254-4.55-4.9375a3.89187,3.89187,0,0,1,1.025-2.6875,3.59373,3.59373,0,0,1,.1-2.65s.83747-.26251,2.75,1.025a9.42747,9.42747,0,0,1,5,0c1.91248-1.3,2.75-1.025,2.75-1.025a3.59323,3.59323,0,0,1,.1,2.65,3.869,3.869,0,0,1,1.025,2.6875c0,3.83747-2.33752,4.6875-4.5625,4.9375a2.36814,2.36814,0,0,1,.675,1.85c0,1.33752-.01251,2.41248-.01251,2.75,0,.26251.1875.575.6875.475A10.0053,10.0053,0,0,0,12,2.2467Z"
+                    ></path>
+                  </svg></button
+              ></a>
 
-  <header class="d-flex align-items-center justify-content-center position-relative"
-    style="height: 100vh; transform: translateY(-10%);">
-    <div class="container text-left">
-      <div class="row align-items-end row-mb">
-        <div class="col-3">
-          <img class="profile-picture" src="imgs/profile-picture.jpg" alt="A photo of Calvin Merry" />
+              <a
+                href="https://www.linkedin.com/in/calvin-merry/"
+                target="_blank"
+                ><button class="social-link">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    data-name="Layer 1"
+                    viewBox="0 0 24 24"
+                    id="linkedin"
+                  >
+                    <path
+                      d="M20.47,2H3.53A1.45,1.45,0,0,0,2.06,3.43V20.57A1.45,1.45,0,0,0,3.53,22H20.47a1.45,1.45,0,0,0,1.47-1.43V3.43A1.45,1.45,0,0,0,20.47,2ZM8.09,18.74h-3v-9h3ZM6.59,8.48h0a1.56,1.56,0,1,1,0-3.12,1.57,1.57,0,1,1,0,3.12ZM18.91,18.74h-3V13.91c0-1.21-.43-2-1.52-2A1.65,1.65,0,0,0,12.85,13a2,2,0,0,0-.1.73v5h-3s0-8.18,0-9h3V11A3,3,0,0,1,15.46,9.5c2,0,3.45,1.29,3.45,4.06Z"
+                    ></path>
+                  </svg></button
+              ></a>
 
-          <div class="links-container text-center">
-            <a href="https://github.com/CodeByCalvin" target="_blank"><button class="social-link"><svg
-                  xmlns="http://www.w3.org/2000/svg" data-name="Layer 1" viewBox="0 0 24 24" id="github">
-                  <path
-                    d="M12,2.2467A10.00042,10.00042,0,0,0,8.83752,21.73419c.5.08752.6875-.21247.6875-.475,0-.23749-.01251-1.025-.01251-1.86249C7,19.85919,6.35,18.78423,6.15,18.22173A3.636,3.636,0,0,0,5.125,16.8092c-.35-.1875-.85-.65-.01251-.66248A2.00117,2.00117,0,0,1,6.65,17.17169a2.13742,2.13742,0,0,0,2.91248.825A2.10376,2.10376,0,0,1,10.2,16.65923c-2.225-.25-4.55-1.11254-4.55-4.9375a3.89187,3.89187,0,0,1,1.025-2.6875,3.59373,3.59373,0,0,1,.1-2.65s.83747-.26251,2.75,1.025a9.42747,9.42747,0,0,1,5,0c1.91248-1.3,2.75-1.025,2.75-1.025a3.59323,3.59323,0,0,1,.1,2.65,3.869,3.869,0,0,1,1.025,2.6875c0,3.83747-2.33752,4.6875-4.5625,4.9375a2.36814,2.36814,0,0,1,.675,1.85c0,1.33752-.01251,2.41248-.01251,2.75,0,.26251.1875.575.6875.475A10.0053,10.0053,0,0,0,12,2.2467Z">
-                  </path>
-                </svg></button></a>
+              <a href="https://www.twitter.com/CodeByCalvin" target="_blank"
+                ><button class="social-link">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    data-name="Layer 1"
+                    viewBox="0 0 24 24"
+                    id="twitter"
+                  >
+                    <path
+                      d="M22,5.8a8.49,8.49,0,0,1-2.36.64,4.13,4.13,0,0,0,1.81-2.27,8.21,8.21,0,0,1-2.61,1,4.1,4.1,0,0,0-7,3.74A11.64,11.64,0,0,1,3.39,4.62a4.16,4.16,0,0,0-.55,2.07A4.09,4.09,0,0,0,4.66,10.1,4.05,4.05,0,0,1,2.8,9.59v.05a4.1,4.1,0,0,0,3.3,4A3.93,3.93,0,0,1,5,13.81a4.9,4.9,0,0,1-.77-.07,4.11,4.11,0,0,0,3.83,2.84A8.22,8.22,0,0,1,3,18.34a7.93,7.93,0,0,1-1-.06,11.57,11.57,0,0,0,6.29,1.85A11.59,11.59,0,0,0,20,8.45c0-.17,0-.35,0-.53A8.43,8.43,0,0,0,22,5.8Z"
+                    ></path>
+                  </svg></button
+              ></a>
 
-            <a href="https://www.linkedin.com/in/calvin-merry/" target="_blank"><button class="social-link"><svg
-                  xmlns="http://www.w3.org/2000/svg" data-name="Layer 1" viewBox="0 0 24 24" id="linkedin">
-                  <path
-                    d="M20.47,2H3.53A1.45,1.45,0,0,0,2.06,3.43V20.57A1.45,1.45,0,0,0,3.53,22H20.47a1.45,1.45,0,0,0,1.47-1.43V3.43A1.45,1.45,0,0,0,20.47,2ZM8.09,18.74h-3v-9h3ZM6.59,8.48h0a1.56,1.56,0,1,1,0-3.12,1.57,1.57,0,1,1,0,3.12ZM18.91,18.74h-3V13.91c0-1.21-.43-2-1.52-2A1.65,1.65,0,0,0,12.85,13a2,2,0,0,0-.1.73v5h-3s0-8.18,0-9h3V11A3,3,0,0,1,15.46,9.5c2,0,3.45,1.29,3.45,4.06Z">
-                  </path>
-                </svg></button></a>
+              <a
+                href="https://www.dropbox.com/s/pabl2gfl7fversv/Calvin%20Merry%20CV.pdf?dl=0"
+                target="_blank"
+                ><button class="social-link">
+                  <img class="social-link" src="imgs/cv-icon.svg"
+                </button></a
+              >
+            </div>
+          </div>
 
-            <a href="https://www.twitter.com/CodeByCalvin" target="_blank"><button class="social-link"><svg
-                  xmlns="http://www.w3.org/2000/svg" data-name="Layer 1" viewBox="0 0 24 24" id="twitter">
-                  <path
-                    d="M22,5.8a8.49,8.49,0,0,1-2.36.64,4.13,4.13,0,0,0,1.81-2.27,8.21,8.21,0,0,1-2.61,1,4.1,4.1,0,0,0-7,3.74A11.64,11.64,0,0,1,3.39,4.62a4.16,4.16,0,0,0-.55,2.07A4.09,4.09,0,0,0,4.66,10.1,4.05,4.05,0,0,1,2.8,9.59v.05a4.1,4.1,0,0,0,3.3,4A3.93,3.93,0,0,1,5,13.81a4.9,4.9,0,0,1-.77-.07,4.11,4.11,0,0,0,3.83,2.84A8.22,8.22,0,0,1,3,18.34a7.93,7.93,0,0,1-1-.06,11.57,11.57,0,0,0,6.29,1.85A11.59,11.59,0,0,0,20,8.45c0-.17,0-.35,0-.53A8.43,8.43,0,0,0,22,5.8Z">
-                  </path>
-                </svg></button></a>
-
-            <a href="https://www.dropbox.com/s/hswtwxn7ygy1axi/Calvin%20Merry%20-%20CV.docx?dl=0"
-              target="_blank"><button class="social-link"><img class="social-link" src="imgs/cv-icon.svg" </button></a>
-
+          <div class="col">
+            <div class="text-container">
+              <h1 class="text-nowrap">Hi 👋🏻 My name is Calvin!</h1>
+              <div class="coloured-box"></div>
+            </div>
           </div>
         </div>
-
-
-
-        <div class="col">
-          <div class="text-container">
-            <h1 class="text-nowrap"> Hi 👋🏻 My name is Calvin! </h1>
-            <div class="coloured-box"></div>
+        <div class="row align-items-end">
+          <div class="col">
+            <div class="text-container">
+              <h2 class="slide-in-animation typing-animation">
+                I'm a full-stack software engineer in Sheffield, UK
+              </h2>
+              <div class="coloured-box"></div>
+            </div>
           </div>
-
         </div>
+        <button
+          class="scroll-down-btn d-flex justify-content-center align-items-center position-absolute bottom-0 start-50 translate-middle-x"
+          style="
+            background: transparent;
+            transition: transform 0.3s ease-in-out;
+          "
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            id="scroll-down-btn"
+            class="w-10 h-10 scroll-down-btn"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M9 12.75l3 3m0 0l3-3m-3 3v-7.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+            />
+          </svg>
+        </button>
       </div>
-      <div class="row align-items-end">
-        <div class="col">
-          <div class="text-container">
-            <h2 class="slide-in-animation typing-animation"> I'm a full-stack software engineer in Sheffield, UK </h2>
-            <div class="coloured-box"></div>
-          </div>
-        </div>
-      </div>
-      <button
-        class="scroll-down-btn d-flex justify-content-center align-items-center position-absolute bottom-0 start-50 translate-middle-x"
-        style="background: transparent; transition: transform 0.3s ease-in-out;">
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
-          id="scroll-down-btn" class="w-10 h-10 scroll-down-btn">
-          <path stroke-linecap="round" stroke-linejoin="round"
-            d="M9 12.75l3 3m0 0l3-3m-3 3v-7.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-        </svg>
-      </button>
+    </header>
+    <div class="text-container">
+      <h1 id="projects-title">Projects</h1>
+      <div class="coloured-box coloured-box-project"></div>
     </div>
-
-
-
-  </header>
-  <div class="text-container">
-    <h1 id="projects-title">Projects</h1>
-    <div class="coloured-box coloured-box-project"></div>
-  </div>
-  <section id="projects" class="projects">
-
-
-
-
-    <div class="container-fluid">
-      <div class="row row-cols-1 row-cols-md-3 row-cols-lg-5 g-5">
-
-
-        <!-- 1st card -->
-        <div class="col-md-3">
-          <div class="card custom-rounded h-100 d-flex flex-column">
-            <div class="card-content">
-              <img src="imgs/flowercollectiveimg.png" class="card-img-top custom-rounded" alt="Project image">
-              <div class="card-body flex-grow-1 text-center">
-                <h5 class="card-title">The Flower Collective website 🪴</h5>
-                <div class="btn-group d-flex flex-wrap justify-content-center mb-4" role="group">
-                  <div class="row">
-                    <div class="col-lg-6">
-                      <button type="button" class="btn-language btn-javascript mb-2">JavaScript</button>
-                      <button type="button" class="btn-language btn-html mb-2">HTML</button>
-                    </div>
-                    <div class="col-lg-6">
-                      <button type="button" class="btn-language btn-css mb-2">CSS</button>
+    <section id="projects" class="projects">
+      <div class="container-fluid">
+        <div class="row row-cols-1 row-cols-md-3 row-cols-lg-5 g-5">
+          <!-- 1st card -->
+          <div class="col-md-3">
+            <div class="card custom-rounded h-100 d-flex flex-column">
+              <div class="card-content">
+                <img
+                  src="imgs/flowercollectiveimg.png"
+                  class="card-img-top custom-rounded"
+                  alt="Project image"
+                />
+                <div class="card-body flex-grow-1 text-center">
+                  <h5 class="card-title">The Flower Collective website 🪴</h5>
+                  <div
+                    class="btn-group d-flex flex-wrap justify-content-center mb-4"
+                    role="group"
+                  >
+                    <div class="row">
+                      <div class="col-lg-6">
+                        <button
+                          type="button"
+                          class="btn-language btn-javascript mb-2"
+                        >
+                          JavaScript
+                        </button>
+                        <button
+                          type="button"
+                          class="btn-language btn-html mb-2"
+                        >
+                          HTML
+                        </button>
+                      </div>
+                      <div class="col-lg-6">
+                        <button type="button" class="btn-language btn-css mb-2">
+                          CSS
+                        </button>
+                      </div>
                     </div>
                   </div>
+                  <p class="card-text">
+                    Welcome to The Flower Collective's online store! We are a
+                    boutique flower shop that provides handcrafted, unique
+                    flower arrangements for all occasions. Our aim is to bring
+                    joy and beauty into people's lives through the art of floral
+                    design.
+                  </p>
+                  <ul class="list-unstyled key-features">
+                    <p>Key features</p>
+                    <li>Functional shopping cart</li>
+                    <li>Card elements of best-selling products</li>
+                    <li>Single-page modern design</li>
+                    <li>Coupon code modal</li>
+                    <li>Smooth scrolling</li>
+                  </ul>
                 </div>
-                <p class="card-text">Welcome to The Flower Collective's online store! We are a boutique flower shop that
-                  provides
-                  handcrafted, unique flower arrangements for all occasions. Our aim is to bring joy and beauty into
-                  people's
-                  lives through the art of floral design.</p>
-                <ul class="list-unstyled key-features">
-                  <p> Key features </p>
-                  <li>Functional shopping cart</li>
-                  <li>Card elements of best-selling products</li>
-                  <li>Single-page modern design</li>
-                  <li>Coupon code modal</li>
-                  <li>Smooth scrolling</li>
-                </ul>
               </div>
-            </div>
-            <div class="card-footer mt-auto">
-              <div class="cta-group d-flex flex-column flex-md-row align-items-center justify-content-center flex-wrap">
-                <a href="https://theflowercollective.netlify.app/" target="_blank" class="btn-card-cta">Live Demo</a>
-                <a href="https://github.com/CodeByCalvin/The-Flower-Collective-Website" target="_blank"
-                  class="btn-card-cta">GitHub</a>
+              <div class="card-footer mt-auto">
+                <div
+                  class="cta-group d-flex flex-column flex-md-row align-items-center justify-content-center flex-wrap"
+                >
+                  <a
+                    href="https://theflowercollective.netlify.app/"
+                    target="_blank"
+                    class="btn-card-cta"
+                    >Live Demo</a
+                  >
+                  <a
+                    href="https://github.com/CodeByCalvin/The-Flower-Collective-Website"
+                    target="_blank"
+                    class="btn-card-cta"
+                    >GitHub</a
+                  >
+                </div>
               </div>
+              <button class="maximise-btn" type="button">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="maximise-btn-icon"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="w-6 h-6"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M3.75 3.75v4.5m0-4.5h4.5m-4.5 0L9 9M3.75 20.25v-4.5m0 4.5h4.5m-4.5 0L9 15M20.25 3.75h-4.5m4.5 0v4.5m0-4.5L15 9m5.25 11.25h-4.5m4.5 0v-4.5m0 4.5L15 15"
+                  />
+                </svg>
+              </button>
             </div>
-            <button class="maximise-btn" type="button">
-              <svg xmlns="http://www.w3.org/2000/svg" class="maximise-btn-icon" fill="none" viewBox="0 0 24 24"
-                stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                <path stroke-linecap="round" stroke-linejoin="round"
-                  d="M3.75 3.75v4.5m0-4.5h4.5m-4.5 0L9 9M3.75 20.25v-4.5m0 4.5h4.5m-4.5 0L9 15M20.25 3.75h-4.5m4.5 0v4.5m0-4.5L15 9m5.25 11.25h-4.5m4.5 0v-4.5m0 4.5L15 15" />
-              </svg>
-            </button>
           </div>
-        </div>
 
-
-
-
-
-
-
-
-
-        <!-- 2nd card -->
-        <div class="col-md-3">
-          <div class="card custom-rounded h-100 d-flex flex-column">
-            <div class="card-content">
-              <img src="imgs/quizappimg.png" class="card-img-top custom-rounded" alt="Project image">
-              <div class="card-body flex-grow-1 text-center">
-                <h5 class="card-title">Game Suggestion Quiz App 🎮</h5>
-                <div class="btn-group d-flex flex-wrap justify-content-center mb-4" role="group">
-                  <div class="row">
-                    <div class="col-lg-6">
-                      <button type="button" class="btn-language btn-javascript">JavaScript</button>
-                      <button type="button" class="btn-language btn-bootstrap">Bootstrap</button>
-                    </div>
-                    <div class="col-lg-6">
-                      <button type="button" class="btn-language btn-html">HTML</button>
-                      <button type="button" class="btn-language btn-css">CSS</button>
+          <!-- 2nd card -->
+          <div class="col-md-3">
+            <div class="card custom-rounded h-100 d-flex flex-column">
+              <div class="card-content">
+                <img
+                  src="imgs/quizappimg.png"
+                  class="card-img-top custom-rounded"
+                  alt="Project image"
+                />
+                <div class="card-body flex-grow-1 text-center">
+                  <h5 class="card-title">Game Suggestion Quiz App 🎮</h5>
+                  <div
+                    class="btn-group d-flex flex-wrap justify-content-center mb-4"
+                    role="group"
+                  >
+                    <div class="row">
+                      <div class="col-lg-6">
+                        <button
+                          type="button"
+                          class="btn-language btn-javascript"
+                        >
+                          JavaScript
+                        </button>
+                        <button
+                          type="button"
+                          class="btn-language btn-bootstrap"
+                        >
+                          Bootstrap
+                        </button>
+                      </div>
+                      <div class="col-lg-6">
+                        <button type="button" class="btn-language btn-html">
+                          HTML
+                        </button>
+                        <button type="button" class="btn-language btn-css">
+                          CSS
+                        </button>
+                      </div>
                     </div>
                   </div>
-                </div>
-                <p class="card-text">Are you stuck trying to decide what game to play next? The Game Suggestion Quiz App
-                  is here
-                  to help! By answering a series of questions about your gaming preferences, you will receive a
-                  custom-generated
-                  game suggestion 🤖💭</p>
+                  <p class="card-text">
+                    Are you stuck trying to decide what game to play next? The
+                    Game Suggestion Quiz App is here to help! By answering a
+                    series of questions about your gaming preferences, you will
+                    receive a custom-generated game suggestion 🤖💭
+                  </p>
 
-                <ul class="list-unstyled key-features">
-                  <p> Key features </p>
-                  <li>Custom-generated game suggestion</li>
-                  <li>Dynamic progress bar</li>
-                  <li>Single-page modern design</li>
-                  <li>Loading screen</li>
-                  <li>Undo button</li>
-                </ul>
+                  <ul class="list-unstyled key-features">
+                    <p>Key features</p>
+                    <li>Custom-generated game suggestion</li>
+                    <li>Dynamic progress bar</li>
+                    <li>Single-page modern design</li>
+                    <li>Loading screen</li>
+                    <li>Undo button</li>
+                  </ul>
+                </div>
               </div>
-            </div>
-            <div class="card-footer mt-auto">
-              <div class="cta-group d-flex flex-column flex-md-row align-items-center justify-content-center flex-wrap">
-                <a href="https://codebycalvin.github.io/Quiz-App/" class="btn-card-cta">Live Demo</a>
-                <a href="https://github.com/CodeByCalvin/Quiz-App" class="btn-card-cta">GitHub</a>
+              <div class="card-footer mt-auto">
+                <div
+                  class="cta-group d-flex flex-column flex-md-row align-items-center justify-content-center flex-wrap"
+                >
+                  <a
+                    href="https://codebycalvin.github.io/Quiz-App/"
+                    class="btn-card-cta"
+                    >Live Demo</a
+                  >
+                  <a
+                    href="https://github.com/CodeByCalvin/Quiz-App"
+                    class="btn-card-cta"
+                    >GitHub</a
+                  >
+                </div>
               </div>
+              <button class="maximise-btn" type="button">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="maximise-btn-icon"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="w-6 h-6"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M3.75 3.75v4.5m0-4.5h4.5m-4.5 0L9 9M3.75 20.25v-4.5m0 4.5h4.5m-4.5 0L9 15M20.25 3.75h-4.5m4.5 0v4.5m0-4.5L15 9m5.25 11.25h-4.5m4.5 0v-4.5m0 4.5L15 15"
+                  />
+                </svg>
+              </button>
             </div>
-            <button class="maximise-btn" type="button">
-              <svg xmlns="http://www.w3.org/2000/svg" class="maximise-btn-icon" fill="none" viewBox="0 0 24 24"
-                stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                <path stroke-linecap="round" stroke-linejoin="round"
-                  d="M3.75 3.75v4.5m0-4.5h4.5m-4.5 0L9 9M3.75 20.25v-4.5m0 4.5h4.5m-4.5 0L9 15M20.25 3.75h-4.5m4.5 0v4.5m0-4.5L15 9m5.25 11.25h-4.5m4.5 0v-4.5m0 4.5L15 15" />
-              </svg>
-            </button>
           </div>
-        </div>
 
-
-
-
-        <!-- 3rd card -->
-        <div class="col-md-3">
-          <div class="card custom-rounded h-100 d-flex flex-column">
-            <div class="card-content">
-              <img src="imgs/devportfolioimg.png" class="card-img-top custom-rounded" alt="Project image">
-              <div class="card-body flex-grow-1 text-center">
-                <h5 class="card-title">Calvin Merry Developer Portfolio 💻</h5>
-                <div class="btn-group d-flex flex-wrap justify-content-center mb-3" role="group">
-                  <div class="row">
-                    <div class="col-lg-6">
-                      <button type="button" class="btn-language btn-javascript">JavaScript</button>
-                      <button type="button" class="btn-language btn-bootstrap">Bootstrap</button>
-                    </div>
-                    <div class="col-lg-6">
-                      <button type="button" class="btn-language btn-html">HTML</button>
-                      <button type="button" class="btn-language btn-css">CSS</button>
+          <!-- 3rd card -->
+          <div class="col-md-3">
+            <div class="card custom-rounded h-100 d-flex flex-column">
+              <div class="card-content">
+                <img
+                  src="imgs/devportfolioimg.png"
+                  class="card-img-top custom-rounded"
+                  alt="Project image"
+                />
+                <div class="card-body flex-grow-1 text-center">
+                  <h5 class="card-title">
+                    Calvin Merry Developer Portfolio 💻
+                  </h5>
+                  <div
+                    class="btn-group d-flex flex-wrap justify-content-center mb-3"
+                    role="group"
+                  >
+                    <div class="row">
+                      <div class="col-lg-6">
+                        <button
+                          type="button"
+                          class="btn-language btn-javascript"
+                        >
+                          JavaScript
+                        </button>
+                        <button
+                          type="button"
+                          class="btn-language btn-bootstrap"
+                        >
+                          Bootstrap
+                        </button>
+                      </div>
+                      <div class="col-lg-6">
+                        <button type="button" class="btn-language btn-html">
+                          HTML
+                        </button>
+                        <button type="button" class="btn-language btn-css">
+                          CSS
+                        </button>
+                      </div>
                     </div>
                   </div>
+                  <p class="card-text">
+                    Welcome to Calvin Merry's developer Portfolio! Here you will
+                    find the projects he has worked on which includes the
+                    technologies he has used, a description of the project and
+                    links to the live site and GitHub repo.
+                  </p>
+                  <ul class="list-unstyled key-features">
+                    <p>Key features</p>
+                    <li>Seamless, single-page design</li>
+                    <li>Interactive card elements</li>
+                    <li>Smooth scrolling</li>
+                    <li>Interactive card elements</li>
+                  </ul>
                 </div>
-                <p class="card-text">Welcome to Calvin Merry's developer Portfolio! Here you will find the projects he
-                  has worked
-                  on which includes the technologies he has used, a description of the project and links to the live
-                  site and
-                  GitHub repo.</p>
-                <ul class="list-unstyled key-features">
-                  <p> Key features </p>
-                  <li>Seamless, single-page design</li>
-                  <li>Interactive card elements</li>
-                  <li>Smooth scrolling</li>
-                  <li>Interactive card elements</li>
-                </ul>
               </div>
-            </div>
-            <div class="card-footer mt-auto">
-              <div class="cta-group d-flex flex-column flex-md-row align-items-center justify-content-center flex-wrap">
-                <a href="" class="btn-card-cta">Live Demo</a>
-                <a href="https://github.com/CodeByCalvin/Calvin-Merry-Developer-Portfolio"
-                  class="btn-card-cta">GitHub</a>
+              <div class="card-footer mt-auto">
+                <div
+                  class="cta-group d-flex flex-column flex-md-row align-items-center justify-content-center flex-wrap"
+                >
+                  <a href="" class="btn-card-cta">Live Demo</a>
+                  <a
+                    href="https://github.com/CodeByCalvin/Calvin-Merry-Developer-Portfolio"
+                    class="btn-card-cta"
+                    >GitHub</a
+                  >
+                </div>
               </div>
+              <button class="maximise-btn" type="button">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="maximise-btn-icon"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="w-6 h-6"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M3.75 3.75v4.5m0-4.5h4.5m-4.5 0L9 9M3.75 20.25v-4.5m0 4.5h4.5m-4.5 0L9 15M20.25 3.75h-4.5m4.5 0v4.5m0-4.5L15 9m5.25 11.25h-4.5m4.5 0v-4.5m0 4.5L15 15"
+                  />
+                </svg>
+              </button>
             </div>
-            <button class="maximise-btn" type="button">
-              <svg xmlns="http://www.w3.org/2000/svg" class="maximise-btn-icon" fill="none" viewBox="0 0 24 24"
-                stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                <path stroke-linecap="round" stroke-linejoin="round"
-                  d="M3.75 3.75v4.5m0-4.5h4.5m-4.5 0L9 9M3.75 20.25v-4.5m0 4.5h4.5m-4.5 0L9 15M20.25 3.75h-4.5m4.5 0v4.5m0-4.5L15 9m5.25 11.25h-4.5m4.5 0v-4.5m0 4.5L15 15" />
-              </svg>
-            </button>
           </div>
-        </div>
 
-
-        <!-- 4th card -->
-        <div class="col-md-3">
-          <div class="card custom-rounded h-100 d-flex flex-column">
-            <div class="card-content">
-              <img src="imgs/textgameimg.png" class="card-img-top custom-rounded" alt="Project image">
-              <div class="card-body flex-grow-1 text-center">
-                <h5 class="card-title">D&D Text Adventure 🧙‍♂️</h5>
-                <div class="btn-group d-flex flex-wrap justify-content-center mb-3" role="group">
-                  <div class="row">
-                    <div class="col-lg-6">
-                      <button type="button" class="btn-language btn-javascript">JavaScript</button>
-                      <button type="button" class="btn-language btn-html">HTML</button>
-                    </div>
-                    <div class="col-lg-6">
-                      <button type="button" class="btn-language btn-css">CSS</button>
+          <!-- 4th card -->
+          <div class="col-md-3">
+            <div class="card custom-rounded h-100 d-flex flex-column">
+              <div class="card-content">
+                <img
+                  src="imgs/textgameimg.png"
+                  class="card-img-top custom-rounded"
+                  alt="Project image"
+                />
+                <div class="card-body flex-grow-1 text-center">
+                  <h5 class="card-title">D&D Text Adventure 🧙‍♂️</h5>
+                  <div
+                    class="btn-group d-flex flex-wrap justify-content-center mb-3"
+                    role="group"
+                  >
+                    <div class="row">
+                      <div class="col-lg-6">
+                        <button
+                          type="button"
+                          class="btn-language btn-javascript"
+                        >
+                          JavaScript
+                        </button>
+                        <button type="button" class="btn-language btn-html">
+                          HTML
+                        </button>
+                      </div>
+                      <div class="col-lg-6">
+                        <button type="button" class="btn-language btn-css">
+                          CSS
+                        </button>
+                      </div>
                     </div>
                   </div>
+                  <p class="card-text">
+                    Want to return to a time of simplicity in gaming? Have an
+                    interest in fantasy games? Welcome to the D&D Text
+                    Adventure! This is an interactive text-based game inspired
+                    by the world of Dungeons and Dragons.
+                  </p>
+                  <ul class="list-unstyled key-features">
+                    <p>Key features</p>
+                    <li>Seamless, single-page design</li>
+                    <li>Player progress tracking</li>
+                    <li>Item interaction</li>
+                    <li>Dynamic text</li>
+                  </ul>
                 </div>
-                <p class="card-text">Want to return to a time of simplicity in gaming? Have an interest in fantasy
-                  games?
-                  Welcome
-                  to the D&D Text Adventure! This is an interactive text-based game inspired by the world of Dungeons
-                  and
-                  Dragons.</p>
-                <ul class="list-unstyled key-features">
-                  <p> Key features </p>
-                  <li>Seamless, single-page design</li>
-                  <li>Player progress tracking</li>
-                  <li>Item interaction</li>
-                  <li>Dynamic text</li>
-                </ul>
               </div>
-            </div>
-            <div class="card-footer mt-auto">
-              <div class="cta-group d-flex flex-column flex-md-row align-items-center justify-content-center flex-wrap">
-                <a href="https://codebycalvin.github.io/DnD-Text-Adventure/" class="btn-card-cta">Live Demo</a>
-                <a href="https://github.com/CodeByCalvin/DnD-Text-Adventure" class="btn-card-cta">GitHub</a>
+              <div class="card-footer mt-auto">
+                <div
+                  class="cta-group d-flex flex-column flex-md-row align-items-center justify-content-center flex-wrap"
+                >
+                  <a
+                    href="https://codebycalvin.github.io/DnD-Text-Adventure/"
+                    class="btn-card-cta"
+                    >Live Demo</a
+                  >
+                  <a
+                    href="https://github.com/CodeByCalvin/DnD-Text-Adventure"
+                    class="btn-card-cta"
+                    >GitHub</a
+                  >
+                </div>
               </div>
+              <button class="maximise-btn" type="button">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="maximise-btn-icon"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="w-6 h-6"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M3.75 3.75v4.5m0-4.5h4.5m-4.5 0L9 9M3.75 20.25v-4.5m0 4.5h4.5m-4.5 0L9 15M20.25 3.75h-4.5m4.5 0v4.5m0-4.5L15 9m5.25 11.25h-4.5m4.5 0v-4.5m0 4.5L15 15"
+                  />
+                </svg>
+              </button>
             </div>
-            <button class="maximise-btn" type="button">
-              <svg xmlns="http://www.w3.org/2000/svg" class="maximise-btn-icon" fill="none" viewBox="0 0 24 24"
-                stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                <path stroke-linecap="round" stroke-linejoin="round"
-                  d="M3.75 3.75v4.5m0-4.5h4.5m-4.5 0L9 9M3.75 20.25v-4.5m0 4.5h4.5m-4.5 0L9 15M20.25 3.75h-4.5m4.5 0v4.5m0-4.5L15 9m5.25 11.25h-4.5m4.5 0v-4.5m0 4.5L15 15" />
-              </svg>
-            </button>
           </div>
-        </div>
 
-
-
-        <!-- 5th card -->
-        <div class="col-md-3">
-          <div class="card custom-rounded h-100 d-flex flex-column blur-card">
-            <div class="card-content flex-grow-1">
-              <img src="imgs/Placeholder-photo.png" class="card-img-top custom-rounded" alt="Project image">
-              <div class="card-body text-center">
-                <h5 class="card-title">Jigsaw Puzzle Tracker 🧩</h5>
-                <h5 class="coming-soon">Coming soon!</h5>
-                <div class="btn-group d-flex flex-wrap justify-content-center mb-3" role="group">
-                  <div class="row">
-                    <div class="col-lg-6">
-                      <button type="button" class="btn-language btn-react">React</button>
-                      <button type="button" class="btn-language btn-javascript">JavaScript</button>
-                    </div>
-                    <div class="col-lg-6">
-                      <button type="button" class="btn-language btn-html">HTML</button>
-                      <button type="button" class="btn-language btn-css">CSS</button>
+          <!-- 5th card -->
+          <div class="col-md-3">
+            <div class="card custom-rounded h-100 d-flex flex-column blur-card">
+              <div class="card-content flex-grow-1">
+                <img
+                  src="imgs/Placeholder-photo.png"
+                  class="card-img-top custom-rounded"
+                  alt="Project image"
+                />
+                <div class="card-body text-center">
+                  <h5 class="card-title">Jigsaw Puzzle Tracker 🧩</h5>
+                  <h5 class="coming-soon">Coming soon!</h5>
+                  <div
+                    class="btn-group d-flex flex-wrap justify-content-center mb-3"
+                    role="group"
+                  >
+                    <div class="row">
+                      <div class="col-lg-6">
+                        <button type="button" class="btn-language btn-react">
+                          React
+                        </button>
+                        <button
+                          type="button"
+                          class="btn-language btn-javascript"
+                        >
+                          JavaScript
+                        </button>
+                      </div>
+                      <div class="col-lg-6">
+                        <button type="button" class="btn-language btn-html">
+                          HTML
+                        </button>
+                        <button type="button" class="btn-language btn-css">
+                          CSS
+                        </button>
+                      </div>
                     </div>
                   </div>
+                  <p class="card-text">
+                    This is a website built for a boutique flower store. It has
+                    a dynamic one-page layout which contains a modal window for
+                    a coupon, customer testimonials, smooth scrolling, 3 card
+                    elements of the best-selling products with modern hover
+                    effects and a functional shopping cart that the user can add
+                    a product to.
+                  </p>
                 </div>
-                <p class="card-text">This is a website built for a boutique flower store. It has a dynamic one-page
-                  layout
-                  which contains a modal window for a coupon, customer testimonials, smooth scrolling, 3 card elements
-                  of the
-                  best-selling products with modern hover effects and a functional shopping cart that the user can add a
-                  product
-                  to.</p>
               </div>
-            </div>
-            <div class="card-footer">
-              <div class="cta-group d-flex flex-column flex-md-row align-items-center justify-content-center flex-wrap">
-                <a href="" class="btn-card-cta">Live Demo</a>
-                <a href="" class="btn-card-cta">GitHub</a>
+              <div class="card-footer">
+                <div
+                  class="cta-group d-flex flex-column flex-md-row align-items-center justify-content-center flex-wrap"
+                >
+                  <a href="" class="btn-card-cta">Live Demo</a>
+                  <a href="" class="btn-card-cta">GitHub</a>
+                </div>
               </div>
-            </div>
-            <!-- <button class="maximise-btn" type="button">
+              <!-- <button class="maximise-btn" type="button">
       <svg xmlns="http://www.w3.org/2000/svg" class="maximise-btn-icon" fill="none" viewBox="0 0 24 24"
         stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
         <path stroke-linecap="round" stroke-linejoin="round"
           d="M3.75 3.75v4.5m0-4.5h4.5m-4.5 0L9 9M3.75 20.25v-4.5m0 4.5h4.5m-4.5 0L9 15M20.25 3.75h-4.5m4.5 0v4.5m0-4.5L15 9m5.25 11.25h-4.5m4.5 0v-4.5m0 4.5L15 15" />
       </svg>
     </button> -->
+            </div>
           </div>
-        </div>
 
-
-
-
-
-        <!-- End of 5th card -->
-      </div>
-    </div>
-
-    <!-- Modal window for projects -->
-    <div class="modal fade" id="myModal" tabindex="-1" aria-labelledby="myModalLabel" aria-hidden="true">
-      <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content">
-          <div class="modal-header">
-            <button type="button" class="close-modal-btn">X</button>
-          </div>
-          <div class="modal-body">
-            <!-- JS function content imported here -->
-          </div>
+          <!-- End of 5th card -->
         </div>
       </div>
-    </div>
 
-
-  </section>
-
-
-
-
-</body>
-
+      <!-- Modal window for projects -->
+      <div
+        class="modal fade"
+        id="myModal"
+        tabindex="-1"
+        aria-labelledby="myModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close-modal-btn">X</button>
+            </div>
+            <div class="modal-body">
+              <!-- JS function content imported here -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
 </html>
